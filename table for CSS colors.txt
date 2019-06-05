@@ -1,0 +1,56 @@
+  <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th scope="col">Colour Name</th>
+                                                        <th scope="col">HEX</th>
+                                                        <th scope="col">RGB Values </th>
+
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+
+                                                        <td>Red</td>
+                                                        <td>#FF0000</td>
+                                                        <td>rgb(255,0,0)</td>
+
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Green</td>
+                                                        <td>#00FF00 </td>
+                                                        <td>rgb(0,255,0)</td>
+
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Blue</td>
+                                                        <td>#0000FF</td>
+                                                        <td>rgb(0,0,0)</td>
+
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Black</td>
+                                                        <td>#000000</td>
+                                                        <td>rgb(0,0,255)</td>
+
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Gray</td>
+                                                        <td>#808080</td>
+                                                        <td>rgb(128,128,128)</td>
+
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>White</td>
+                                                        <td>#FFFFFF</td>
+                                                        <td>rgb(255,255,255)</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>

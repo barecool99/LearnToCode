@@ -1,0 +1,54 @@
+html {
+   
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background: url(final.jpg);
+    color: #F5F5F5;
+}
+.Main_heading{
+
+margin: auto;
+background: rgb(0, 0, 0);
+padding: 10px;
+padding-top: 10%;
+padding-bottom:50px;
+}
+#heading{ /* learn how to make website */
+    margin-top: 2.8%; /* margin gives space */
+    margin-bottom: 2.8%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;; /* em means it relates to the base font size  */
+    font-weight: 400; /* gives it like bold or light */
+  
+}
+#menubar{ /* menu basically */
+  background-color: gainsboro; /* that white colour background in menu */
+}
+#menubar a{ /* targets the links in the menu bar */
+   padding-left: 25px;
+   padding-right: 25px;
+}
+#menubar a:hover{
+    background-color: 
+    #FFFFFF;       
+}
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.Paragraph{
+    font-size: 1.4em;
+}
+.Main_heading{
+    text-align: center;
+}
+.topics{
+    list-style: none;
+}
+.card-body{ /* drop down menu background for the list content */
+background-color: transparent;
+}
+.space{
+   margin-bottom: 10px;
+}

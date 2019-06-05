@@ -1,0 +1,705 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Learn JavaScript - Saugat</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="html_styling.css">
+    <script src="javascript_js.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Saugat</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home
+                            <span class="sr-only">(current)</span>
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"> Helpful Links
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Started
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="html_content.html">HTML5</a>
+                            </li>
+                            <li>
+                                <a href="css_content.html">CSS</a>
+                            </li>
+                            <li>
+                                <a href="javascript_content.html">JavaScript</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+    </nav>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Topics for JavaScript</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#content">Introduction,History, Uses and Evaluation</a>
+                </li>
+                <li>
+                    <a href="#DTVO">Data Types, Variable and Operators </a>
+                </li>
+                <li>
+                    <a href="#ARR">Arrays</a>
+                </li>
+                <li>
+                    <a href="#LOOPS">Loops</a>
+                </li>
+                <li>
+                    <a href="#CS">Conditional Statement</a>
+                </li>
+                <li>
+                    <a href="#FC">Functions and Comments</a>
+                </li>
+                <li>
+                    <a href="#DP">DOM Principals</a>
+                </li>
+                <li>
+                    <a href="#UE">Using Events</a>
+                </li>
+                <li>
+                    <a href="#UEL">Using Event Listeners</a>
+                </li>
+                <li>
+                    <a href="#FV">Form Validations</a>
+                </li>
+                <li>
+                    <a href="#RE">Regular Expression</a>
+                </li>
+                <li>
+                    <a href="#frame">Frameworks</a>
+                </li>
+                <li>
+                    <a href="#Q">Quiz</a>
+                </li>
+            </ul>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <h1>We will be learning JavaScript, start down below...</h1>
+            <div class="line"></div>
+            <h2>Introduction, History, Uses of JS</h2>
+            <br>
+            <p>
+                JavaScript is the most popular programming language in the world. It is the language for HTML, for the Web, for computers,
+                servers, laptops, tablets, smart phones, and more. This page contains some examples of what JavaScript can
+                do in HTML.JavaScript History Developed by Brendan Eich at Netscape Scripting language for Navigator 2 Later
+                standardized for browser compatibility ECMAScript Edition 3 (aka JavaScript 1.5) JavaScript Can Change HTML
+                Elements The HTML DOM (the Document Object Model) is the official W3C standard for accessing HTML elements.
+                JavaScript can manipulate the DOM (change HTML contents). The following example changes the content (innerHTML)
+                of an HTML element identified with id="demo":
+
+            </p>
+
+            <div class="line"></div>
+
+
+            <h2 id="DTVO">Data Types, Variable and Operators</h2>
+            <br>
+            <p>JavaScript variables can hold many data types: numbers, strings, objects and more. </p>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#footwear" aria-expanded="false" aria-controls="footwear">
+                Click here to find out!
+            </button>
+
+            <div class="collapse" id="footwear">
+                <p>
+                    <code><ul>var length = 16;                               // Number</ul></code>
+                    <code><ul> var lastName = "Johnson";                      // String</ul></code>
+                    <code><ul> var x = {firstName:"John", lastName:"Doe"};    // Object</ul></code>
+                </p>
+            </div>
+
+            <hr>
+            <h4> The Concept of Data Types</h4>
+            <p> In programming, data types is an important concept. To be able to operate on variables, it is important to know
+                something about the type.Without data types, a computer cannot safely solve this:</p>
+
+            <code>
+                <ul>var x = 16 + "Volvo";</ul></code>
+            <br> Does it make any sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result? JavaScript
+            will treat the example above as:
+            <br>
+            <code><ul> var x = "16" + "Volvo";</ul></code>
+            <p> When adding a number and a string, JavaScript will treat the number as a string. Have a guess for the question
+                down below: </p>
+            <code> <ul>var x = 16 + "Volvo";</ul> </code>
+            <p>
+                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#datatypes" aria-expanded="false" aria-controls="footwear">
+                    Answer:
+                </button>
+
+                <div class="collapse" id="datatypes">
+                    <p>When adding a number and a string, JavaScript will treat the number as a string so the answer is:
+
+                        <ul>
+                            <code>16Volvo</code>
+                        </ul>
+                    </p>
+                </div>
+                <hr>
+            </p>
+
+
+            <h4> JavaScript Strings</h4>
+            <p> A string (or a text string) is a series of characters like "John Doe". Strings are written with quotes. You can
+                use single or double quotes: </p>
+            <code><ul>var carName = "Volvo XC60";   // Using double quotes</ul></code>
+            <code> <ul>var carName = 'Volvo XC60';   // Using single quotes</ul> </code>
+            <p>
+                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#strings" aria-expanded="false" aria-controls="footwear">
+                    Find out here:
+                </button>
+
+                <div class="collapse" id="strings">
+                    <p>Strings are written with quotes. You can use single or double quotes:
+
+                        <ul>Volvo XC60</ul>
+                        <ul> Volvo XC60</ul>
+                    </p>
+                </div>
+                <hr>
+
+
+
+                <h4> JavaScript Numbers</h4>
+                <p>JavaScript has only one type of numbers. Numbers can be written with, or without decimals:</p>
+                <code><ul>var x1 = 34.00;     // Written with decimals</ul></code>
+                <code> <ul>var x2 = 34;        // Written without decimals</ul> </code>
+                <p>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#num" aria-expanded="false" aria-controls="footwear">
+                        Find out here:
+                    </button>
+
+                    <div class="collapse" id="num">
+                        <p>Numbers can be written with, or without decimals:
+
+                            <ul>34</ul>
+                            <ul> 34</ul>
+                            <ul> 3.14</ul>
+                        </p>
+                    </div>
+
+                    <hr>
+                    <h4> JavaScript Booleans</h4>
+                    <p> Booleans can only have two values: true or false.</p>
+                    <code><ul>var x = 5;</ul></code>
+                    <code> <ul>var y = 5;</ul> </code>
+                    <code><ul>(x == y)       // Returns true</ul></code>
+                    <code> <ul>(x == z)       // Returns false</ul> </code>
+
+                    <p>
+                        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#bool" aria-expanded="false" aria-controls="footwear">
+                            Find out here:
+                        </button>
+
+                        <div class="collapse" id="bool">
+                            <p>Booleans can have two values: true or false:
+
+                                <ul>true</ul>
+                                <ul>false</ul>
+                            </p>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <h2 id="ARR"> Arrays</h2>
+                        <p>JavaScript arrays are written with square brackets. Array items are separated by commas. The following
+                            code declares (creates) an array called cars, containing three items (car names):</p>
+
+                        <code><ul>var cars = ["Saab", "Volvo", "BMW"];</ul></code>
+                        <p>
+                            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#arrays" aria-expanded="false" aria-controls="footwear">
+                                Answer:
+                            </button>
+
+                            <div class="collapse" id="arrays">
+                                <p> Saab,Volvo,BMW
+                                </p>
+                            </div>
+
+
+                            <hr>
+
+                            <h2 id="LOOPS">Loops</h2>
+                            <p>Loops are handy, if you want to run the same code over and over again, each time with a different
+                                value. Often this is the case when working with arrays:</p>
+                            <code><ul> text += cars[0] + ""; </ul></code>
+                            <code><ul>text += cars[1] + ""; </ul></code>
+                            <code><ul> text += cars[2] + ""; </ul></code>
+                            <code><ul> text += cars[3] + ""; </ul></code>
+                            <code><ul> text += cars[4] + ""; </ul></code>
+                            <code><ul> text += cars[5] + "";</ul></code>
+
+                            <p>
+                                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#loops" aria-expanded="false" aria-controls="footwear">
+                                    Answer:
+                                </button>
+
+                                <div class="collapse" id="loops">
+                                    <p>
+                                        <code> <ul>var i;</ul> </code>
+                                        <code> <ul>  for (i = 0; i &lt; cars.length; i++) { </ul> </code>
+                                        <code> <ul> text += cars[i] + "<br>";</ul> </code>
+                                        <code> <ul> }</ul> </code>
+                                    </p>
+                                </div>
+
+                                <hr>
+                                <h2 id="CS">Conditional Statements</h2>
+                                <p> Very often when you write code, you want to perform different actions for different decisions.
+                                    You can use conditional statements in your code to do this. In JavaScript we have the
+                                    following conditional statements:</p>
+                                <li> Use if to specify a block of code to be executed, if a specified condition is true</li>
+                                <li> Use else to specify a block of code to be executed, if the same condition is false</li>
+                                <li> Use else if to specify a new condition to test, if the first condition is false</li>
+                                <li> Use switch to specify many alternative blocks of code to be executed</li>
+                                <br>
+                                <h4> The if Statement</h4>
+                                <p>Use the if statement to specify a block of JavaScript code to be executed if a condition
+                                    is true.</p>
+                                <h5>Syntax</h5>
+                                <code> <ul>if (condition) {</ul></code>
+                                <code> <ul>block of code to be executed if the condition is true</ul></code>
+                                <code> <ul>   }</ul></code>
+
+                                <h4> The else Statement</h4>
+                                <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+                                <h5>Syntax</h5>
+                                <code> <ul>if (condition) {</ul></code>
+                                <code> <ul>block of code to be executed if the condition is true</ul></code>
+                                <code> <ul> } else { </ul></code>
+                                <code> <ul> block of code to be executed if the condition is false</ul></code>
+                                <code> <ul>   }</ul></code>
+
+
+                                <h4> The else if Statement</h4>
+                                <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+                                <h5>Syntax</h5>
+                                <code> <ul>if (condition1) {</ul></code>
+                                <code> <ul>block of code to be executed if the condition2 is true</ul></code>
+                                <code> <ul> } else (condition2) { </ul></code>
+                                <code> <ul> block of code to be executed if the condition2 is false</ul></code>
+                                <code> <ul> } else { </ul></code>
+                                <code> <ul> block of code to be executed if the condition2 is false</ul></code>
+                                <code> <ul>   }</ul></code>
+
+                                <hr>
+                                <h2 id="FC">Function and Comments</h2>
+                                <p>
+                                    JavaScript comments can be used to explain JavaScript code, and to make it more readable. JavaScript comments can also be
+                                    used to prevent execution, when testing alternative code.
+                                </p>
+                                <h5> Single Line Comments</h5>
+                                <p>
+                                    Single line comments start with //. Any text between // and the end of the line will be ignored by JavaScript (will not be
+                                    executed).
+                                </p>
+
+                                <h5>Multi-line Comments</h5>
+                                <p>Multi-line comments start with /* and end with */. Any text between /* and */ will be ignored
+                                    by JavaScript.
+                                </p>
+
+
+                                <p>
+                                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#comments" aria-expanded="false" aria-controls="footwear">
+                                        Example
+                                    </button>
+
+                                    <div class="collapse" id="comments">
+                                        <h4> Single Line Comment </h4>
+                                        <code>  var x = 5;      // Declare x, give it the value of 5</code>
+                                        <h4> Multi Line Comment </h4>
+                                        <code>   /*
+                                        The code below will change
+                                        the heading with id = "myH"
+                                        and the paragraph with id = "myP"
+                                        in my web page:
+                                        */</code>
+
+                                    </div>
+                                    <hr>
+
+
+                                    <h2 id="DP">DOM Principals</h2>
+                                    <p> DOM stands for Document Object Model which is a language/platform with neutral interface
+                                        to a documen> It also deignes the doucment objects , its relatiobship as well as
+                                        methods and properties. </p>
+                                    <br>
+                                    <h4> DOM Methods </h4>
+                                    <p> HTML DOM methods are actions you can perform (on HTML Elements). HTML DOM methods are
+                                        actions you can perform (on HTML Elements).</p>
+                                    <h5>Example:</h5>
+                                    <code> <ul>&lt;html&gt;</ul></code>
+                                    <code> <ul>&lt;body&gt;</ul></code>
+                                    <code> <ul>&lt;p id="demo"&gt;</p></ul></code>
+                                    <code> <ul>&lt;script&gt;</script></ul></code>
+                                    <code> <ul> document.getElementById("demo").innerHTML = "Hello World!"; </ul></code>
+                                    <code> <ul> &lt;/script&gt;</ul></code>
+                                    <code> <ul>&lt;/body&gt;</ul></code>
+                                    <code> <ul>&lt;/html&gt;</ul></code>
+
+                                    <p>
+                                        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#dom" aria-expanded="false" aria-controls="footwear">
+                                          Compile here:
+                                        </button>
+
+                                        <div class="collapse" id="dom">
+                                            <code> Hello World </code>
+
+                                        </div>
+                                        <hr>
+                                        <br>
+                                        <h4> HTML Content</h4>
+                                    </p>
+                                    The easiest way to modify the content of an HTML element is by using the innerHTML property. To change the content of an
+                                    HTML element, use this syntax:
+                                    <code>document.getElementById(id).innerHTML = new HTML</code>
+                                   
+                                        .This example changes the content of a
+                                        element:
+                                        </p>
+                                        <code> <ul>&lt;html&gt;</ul></code>
+                                        <code> <ul>&lt;body&gt;</ul></code>
+                                        <code> <ul>&lt;p id="p1">Hello World!&lt;/p&gt;</p></ul></code>
+                                        <code> <ul>&lt;script&gt;</script></ul></code>
+                                        <code> <ul> document.getElementById("p1").innerHTML = "New text!";</ul></code>
+                                        <code> <ul> &lt;/script&gt;</ul></code>
+                                        <code> <ul>&lt;/body&gt;</ul></code>
+                                        <code> <ul>&lt;/html&gt;</ul></code>
+
+                                    </p>
+                                    <p>
+                                        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#htmlcontent" aria-expanded="false" aria-controls="footwear">
+                                            Click to Compile :
+                                        </button>
+
+                                        <div class="collapse" id="htmlcontent">
+                                            <code> <ul>JavaScript can Change HTML</ul></code>
+                                            <code><ul> New text!</ul></code>
+                                            <code><ul>The paragraph above was changed by a script.</ul></code>
+
+                                        </div>
+                                        <p>
+                                            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#example" aria-expanded="false" aria-controls="footwear">
+                                                Click to explain:
+                                            </button>
+
+                                            <div class="collapse" id="example">
+                                                 <ul>Example explained:</ul>
+                                                <li> The HTML document above contains a element with id="p1"</li>
+                                              <li>We use the HTML DOM to get the element with id="p1"</li>
+                                                <li>A JavaScript changes the content (innerHTML) of that element to "New text!"</li>
+
+                                            </div>
+                                            <hr>
+                                          
+                                            <h2 id="UE">Using Events</h2>
+                                            <p>The HTML DOM allows you to execute code when an event occurs. Events are generated
+                                                by the browser when "things happen" to HTML elements:</p>
+                                            <li> An element is clicked on </li>
+                                            <li> The page has loaded </li>
+                                            <li> Input fields are changed</li>
+                                        </p>You will learn more about events in the next chapter of this tutorial. This example
+                                        changes the style of the HTML element with id="id1", when the user clicks a button:
+                                    </p>
+                                    <code> <ul>&lt;html&gt;</ul></code>
+                                    <code> <ul>&lt;body&gt;</ul></code>
+                                    <code> <ul>&lt;h1 id="id1">My Heading 1&lt;/h1&gt;</p></ul></code>
+                                    <code> <ul>&lt;button type="button" </script></ul></code>
+                                    <code> <ul>onclick="document.getElementById('id1').style.color = 'red'"></ul></code>
+                                    <code> <ul> Click Me!&lt;/button&gt;</ul></code>
+                                    <code> <ul>&lt;/body&gt;</ul></code>
+                                    <code> <ul>&lt;/html&gt;</ul></code>
+                                    <p>
+                                        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#usereventt" aria-expanded="false" aria-controls="footwear">
+                                            Click to Compile
+                                        </button>
+
+                                        <div class="collapse" id="usereventt">
+                                            <img src="userevent.jpg" alt="Capture">
+
+                                        </div>
+                                        <hr>
+                                        <br>
+
+                                        <h2 id="UEL">Using Event Listeners</h2>
+                                        <p>
+                                            <li>The addEventListener() method attaches an event handler to the specified element.</li>
+                                            
+                                            <li>The addEventListener() method attaches an event handler to an element without
+                                                overwriting existing event handlers.</li>
+                                            <li> You can add many event handlers to one element.</li>
+                                            <li> You can add many event handlers to one element.</li>
+                                            <li> You can add many event handlers to one element.</li>
+                                            <li> The addEventListener() method makes it easier to control how the event reacts
+                                                to bubbling.</li>
+                                            <li> When using the addEventListener() method, the JavaScript is separated from the
+                                                HTML markup, for better readability and allows you to add event listeners
+                                                even when you do not control the HTML markup.</li>
+                                            <li> You can easily remove an event listener by using the removeEventListener() method.</li>
+                                        </p>
+                                        <br>
+                                        <h4> Syntax </h4>
+                                        <code> <ul>element.addEventListener(event, function, useCapture);</ul></code>
+
+                                        <h4> Code Explained </h4>
+                                        <li> The first parameter is the type of the event (like "click" or "mousedown").</li>
+                                        <li> The second parameter is the function we want to call when the event occurs.</li>
+                                        <li> The third parameter is a boolean value specifying whether to use event bubbling or
+                                            event capturing. This parameter is optional.</li>
+                                        <br>
+                                        <h4> Example</h4>
+
+                                        <code> <ul>&lt;html&gt;</ul></code>
+                                        <code> <ul>&lt;body&gt;</ul></code>
+                                        <code> <ul>&lt;p&gt;This example uses the addEventListener() method to attach a click event to a button.&lt;/p&gt;&lt;/p&gt;</ul></code>
+                                        <code> <ul>&lt;button id="myBtn">Try it&lt;/button&gt; </script></ul></code>
+                                        <code> <ul>onclick="document.getElementById('id1').style.color = 'red'"></ul></code>
+                                        <code> <ul>&lt;script&gt;</ul></code>
+                                        <code> <ul> document.getElementById("myBtn").addEventListener("click", function(){
+                                                    alert("Hello World!");</ul></code>
+                                        <code> <ul>});</ul></code>
+                                        <code> <ul>&lt;/script&gt;</ul></code>
+                                        <code> <ul>&lt;/body&gt;</ul></code>
+                                        <code> <ul>&lt;/html&gt;</ul></code>
+                                        <br>
+                                        <h4> Result </h4>
+
+                                        <p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+                                        <button id="myBtn">Try it</button>
+
+                                        <script>
+                                            document.getElementById("myBtn").addEventListener("click", function () {
+                                                alert("Hello World!");
+                                            });
+                                        </script>
+
+
+                                        <hr>
+
+                                        <hr>
+                                        <h2 id="FV"> Form Validations</h2>
+                                        <br>
+                                        <h4> Data Validation </h4>
+                                        <p>
+                                            Data validation is the process of ensuring that user input is clean, correct, and useful. Typical validation tasks are: has
+                                            the user filled in all required fields? has the user entered a valid date? has
+                                            the user entered text in a numeric field? Most often, the purpose of data validation
+                                            is to ensure correct user input. Validation can be defined by many different
+                                            methods, and deployed in many different ways. Server side validation is performed
+                                            by a web server, after input has been sent to the server. Client side validation
+                                            is performed by a web browser, before input is sent to a web server.
+
+                                        </p>
+                                        <br>
+                                        <h4> HTML Form Validation </h4>
+                                        <p>HTML form validation can be done by JavaScript. If a form field (fname) is empty,
+                                            this function alerts a message, and returns false, to prevent the form from being
+                                            submitted:
+                                        </p>
+
+                                        <code> <ul>function validateForm() {</ul></code>
+                                        <code><ul>  var x = document.forms["myForm"]["fname"].value;</ul></code>
+                                        <code><ul> if (x == "") {</ul></code>
+                                        <code><ul>   alert("Name must be filled out");</ul></code>
+                                        <code><ul>  return false;</ul></code>
+                                        <code><ul> {</ul></code>
+                                        <code><ul>{</ul></code>
+                                        <p>
+                                            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#valform" aria-expanded="false" aria-controls="footwear">
+                                                Result
+                                            </button>
+
+                                            <div class="collapse" id="valform">
+
+                                                <img src="Form Validation JS.jpg" alt="Mountain View">
+                                            </div>
+                                            <hr>
+
+                                            <h2 id="RE">Regular Expression</h2>
+                                            <p>A regular expression is an object that describes a pattern of characters. Regular
+                                                expressions are used to perform pattern-matching and "search-and-replace"
+                                                functions on text.
+                                            </p>
+                                            <h4> Syntax </h4>
+                                            <code>/pattern/modifiers; </code>
+                                            <h4> Example </h4>
+
+                                            <code>var patt = /w3schools/i</code>
+
+                                            <p>
+                                                    <br>
+                                                Example explained:
+                                                <li>
+                                                    <i>/w3schools/i</i> is a regular expression. </li>
+                                                <li>
+                                                    <i>w3schools </i> is a pattern (to be used in a search). </li>
+                                                <li>
+                                                    <i>i</i> is a modifier (modifies the search to be case-insensitive).
+                                                </li>
+
+                                            </p>
+
+                                            <hr>
+
+
+
+
+                                            <h2 id="frame">Frameworks</h2>
+
+
+                                            <p>
+                                                <a href="https://jquery.com/" style=" color: red">Click here to learn more for the JQuery website</a>
+                                            </p>
+
+
+                                        </p>
+
+                                        <hr>
+                                        <h2 id="Q">Quiz</h2>
+                                        <p>This is a Quiz to Test on your JavaScript knowledge, Click the "+" sign for the answers
+                                            of these questions!</p>
+
+                                        <button class="collapsible"> Who developed JavaScript?</button>
+                                        <div class="content">
+                                            <p>Brendan Eich</p>
+
+                                        </div>
+                                        <button class="collapsible">What does this compile to? (var y = 16+volvo) </button>
+                                        <div class="content">
+                                            <p>
+                                                <code>&lt;16volvo"&gt;</code>
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">What value does Boolean have? true or false </button>
+                                        <div class="content">
+                                            <p>
+                                                <p> both </p>
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">Do we use square or round brackets to write array in JavaScript? </button>
+                                        <div class="content">
+                                            <p>
+                                                <p>square</p>
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">Is this IF or an ELSE statement? </button>
+                                        <div class="content">
+
+                                            <p>
+                                                <code>if ( condition){
+                                code..
+                            } else{
+                                code...
+                            }
+
+                            </code>
+                                            </p>
+                                            <p>This is an
+                                                <b>ELSE</b> Statement</p>
+                                        </div>
+                                        <button class="collapsible">
+                                            How do you write comments in JavaScript? </button>
+                                        <div class="content">
+                                            <p>
+                                                <code> block of code...// Declare x, give it the value of 5 </code>
+
+                                                <code>  block of code... /* --- */</code>
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">What does DOM stand for? </button>
+                                        <div class="content">
+                                            <p>
+                                                Document Object Model
+                                            </p>
+                                        </div>
+
+                                        <hr>
+                                        <script>
+                                            var coll = document.getElementsByClassName("collapsible");
+                                            var i;
+
+                                            for (i = 0; i < coll.length; i++) {
+                                                coll[i].addEventListener("click", function () {
+                                                    this.classList.toggle("active");
+                                                    var content = this.nextElementSibling;
+                                                    if (content.style.display === "block") {
+                                                        content.style.display = "none";
+                                                    } else {
+                                                        content.style.display = "block";
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                        <br>
+                                        <a href="javascript_content.html" class="btn btn-primary btn-sm scrollup" role="button">
+                                            <i class="material-icons">keyboard_arrow_up</i>
+                                        </a>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>

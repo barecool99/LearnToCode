@@ -1,0 +1,60 @@
+
+.topnav{
+	background-color: #034174;
+	overflow: hidden;
+}
+.topnav a{
+	   float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+}
+.topnav a:hover{
+	   background-color: #1484E6;
+    color: black;
+}
+hr{
+	color: #0E8CF4;
+background-color: #034174;
+height: 11px;
+}
+h1{
+    font-size: 39px;
+    color:#034174;
+    text-align: left;
+}
+h2{
+    color:#034174;
+    text-align: left;
+}
+#Flickr{
+float: right;
+border: 5px solid gainsboro;
+border-radius: 25px;
+padding: 15px;
+margin: 15px;
+}
+p{
+    font-size: 16px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+    body { width: 960px; margin: 0 auto;}
+#Country{
+border: 1px double black;
+outline: 1px double black;
+outline-offset: 1px;
+margin: 0px 20px;
+padding: 0px 10px 10px 10px;
+}
+#Content{
+    min-width: 510px;
+    max-width: 960px;
+    margin: auto;
+    background-color: white;
+}
+#Sign{
+background-image: url "(https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/bsl/css/sign_language.png)"
+
+}

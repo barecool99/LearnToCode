@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Learn HTML - Saugat</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Our Custom CSS -->
+
+    <link rel="stylesheet" href="html_styling.css">
+    <script src="html_javascript.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">&lt;Teach Me Code&gt;</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home
+                            <span class="sr-only">(current)</span>
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#home_page"> Helpful Links
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#HL" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Started
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="html_content.html">HTML5</a>
+                            </li>
+                            <li>
+                                <a href="css_content.html">CSS</a>
+                            </li>
+                            <li>
+                                <a href="javascript_content.html">JavaScript</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+    </nav>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Topics for HTML5</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#content">Introduction</a>
+                </li>
+                <li>
+                    <a href="#tags">Tags and Attributes</a>
+                </li>
+                <li>
+                    <a href="#lists">Lists </a>
+                </li>
+                <li>
+                    <a href="#tables">Tables</a>
+                </li>
+                <li>
+                    <a href="#links">Links</a>
+                </li>
+                <li>
+                    <a href="#sp_char">Special Characters</a>
+                </li>
+                <li>
+                    <a href="#frame">Frameworks</a>
+                </li>
+                <li>
+                    <a href="#Q">Quiz</a>
+                </li>
+            </ul>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <h1>We will be learning HTML5, start down below...</h1>
+            <div class="line"></div>
+            <h2>Introduction, History, Uses and Evolution of HTML</h2>
+            <br>
+
+
+
+            <p>HTML stands for HyperText Markup Language which allows us to move around the web. Hypertexts are simple text
+                that is use to work as a link into none page and connect other pages with that link. Mark up language is
+                basically a way of writing layout information in a document. In the late 1980s, Tim Berners-Lee invented
+                HTML when he was working in CERN ( European Laboratory for practical Physics in Geneva, Switezerland). Overtime,
+                as users were getting into mobile internet, HTML 5 came around which was more flexible that previous versions
+                with the improvement in technology. HTML has been around since 1990s as internet users were growing rapidly.
+                In this website, we will be learning HTML5 due to its improved semantic organisation, replacing scripting
+                with core markup where possible, reducing need for browser plugins as well as improved device independance.
+                HTML is not a programming language but rather a mark up language which are made up of tags. Tags are surrounded
+                by angle brackets such as
+                <code> &lt;and/&gt;</code> The first pair is called the start tag and the second tags is called the end tag. Tags are used to describe
+                contents. Contents will include heading, paragraph, link and image.
+
+            </p>
+
+
+
+            <div class="line"></div>
+
+
+            <h2 id="tags">Tags and Attributes</h2>
+            <br>
+            <p>A tag is always enclosed in angle bracket with the start tag and the end tag as mentioned above. HTML tags normally
+                come in pairs like
+                <code>&lt; this is a heading/&gt;</code> and
+                <code> &lt;this is a heading/&gt;</code>. Some are not paired such as the line break
+                <code> &lt;br/&gt; </code>and the horizontal rule
+                <code> &lt;hr/&gt; </code> tags can be nested inside block level tags such as
+                <code> &lt;p/&gt;</code> the
+                <code>&lt;em/&gt;</code> of this paragraph
+                <code>&lt;/em/&gt;.</code> The
+                <code> &lt;em/&gt;</code> tags means that the text is emphasised in italic by the the browser.
+                <br>
+                <p>
+                    Attributes specifies additional properties( behaviour) for HTML tags as name/value pairs such as
+                    <code> &lt; tag attribute=" value
+                    "> content &lt;/ div>.</code> Attributes are also declared in the opening tags such as
+                    <code>&lt; div id=" content
+                    "> content &lt;/ div>. </code>You can name the id anything and usually the id is used to link later for html_styling in CSS which we
+                    will learn later. Self closing tags as mentioned above can also have attributes such as:
+                    <code> &lt; img src=" content " alt=" my logo"></code>
+
+                    <!--Try it for yourself -->
+
+
+                    <br> NOTE: It is very important to comment everything you have done so it helps user with readbility and
+                    helps you understand better or for next time when you come back. In HTML5 we start a comment with "
+                    <code>&lt; !-- "</code> and write a comment whatever it is and end it with
+                    <code> " -->"</code>. If you have done the above steps right, your comment should be in green.
+
+                    <br>
+                    <br>
+                </p>
+                <h3>How to Start</h3>
+                <p> To start, you can write html code in notepad. Save the file with (.html) extenstion and find the location
+                    of where you saved the file and open the file using "Open with" option in Google Chrome, Internet Explorer,
+                    Opera and other web browsers. The purpose of a web browser is to read html documents and display them
+                    as a web page. To add content to your page, we will ususally start off with the paragraph tag i.e
+                    <code> &lt;p>
+                    and &lt;/p></code> and write the content like " Hello World" inside the paragraph.
+                </p>
+                <!-- Make a quiz here like which one of the follwoing is the p tag -->
+
+
+                <div class="line"></div>
+
+                <h2 id="lists"> Lists</h2>
+                <br>
+                <p>HTML5 supports 3 types of list structure which is shown down here:
+                    <br>
+                    <ul>
+                        <li class="Unordered Lists"> Unordered (Bullets) </li>
+                        <ul>
+                            <li class="Ordered"> Ordered (Numbered) </li>
+                            <ul>
+                                <li class=" Definition"> Definiton (Descriptive Terms) </li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </p>
+                <br>
+                <p> Unordered and Ordered Lists starts with the ul tag like this:
+                    <code>&lt;ul></code> which stands for Unordered List and its closing tag like this:
+                    <code>&lt;/ul></code>. However you can put a Ordered Lists inside an Unordered Lists like this:
+                    <code>&lt;ul> &lt;li></code> This is a paragraph to show lists
+                    <code> &lt;/li> &lt;/ul></code>
+                    <p> However, the numbered lists start with an ol tag which stands for Ordered Lists. Each item is surrounded
+                        by li tags and the lists end with a closing tag like this:
+                        <code> &lt;ol> &lt;li> </code>This is a paragraph to show numbered lists
+                        <code>&lt;/li> &lt;/ol></code>
+                    </p>
+                    <p> Definition Lists is used for description list with its tag
+                        <code>&lt;dl</code> like this:
+                        <code> &lt;dl></code> This is a paragraph to show description list
+                        <code> &lt;/dl></code>
+
+                        <div class="line"></div>
+
+
+                        <h2 id="tables">Tables</h2>
+                        <br>
+                        <p> We can create a table in HTML using the
+                            <code> &lt;table> </code> tag. Tables consist of rows and columns. For rows we use the
+                            <code>&lt;tr></code> tag and table header is done using the
+                            <code>&lt;th> </code> tag. By default, table headings are bold and centered. A table data/cell is defined with the
+                            <code>&lt;td></code> tag. Tables have many attributes:
+
+
+                            <li class="border">
+                                Border </li>
+
+                            <li class="width">
+                                Width </li>
+
+                            <li class="cellspacing">
+                                Cell-spacing
+                            </li>
+
+                            <li class="cellpadding">
+                                Cell-padding
+                            </li>
+
+                        </p>
+                        <br>
+
+                        <hr>
+                        <h2 id="links">Links</h2>
+                        <br>
+                        <p> HTML links and Hyper links which means you can click on a link and jump to another document. They
+                            are often reffered to as: Anchors. In HTML we add a link using an
+                            <code>&lt;a> </code>tag like this:
+                            <code> &lt;a
+                            href="url"> link text &lt;/a></code>
+
+                            <br>
+                            <br>
+                        </p>
+                        <!-- Make a try for yourself ting here -->
+                        <h2> MultiMedia </h2>
+                        <p>
+                            MultiMedia comes in many different forms such as images, video and many more. There are many multimedia format such as as
+                            .swf, .wav,.mp3,.mpg and more.
+
+
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Entity Name</th>
+                                        <th scope="col">Example</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+
+                                        <td>Image Tag</td>
+                                        <td>img tag is an image tag for now with attributes(behaviour) and does not have a closing
+                                            tag. </td>
+                                        <td>
+                                            <code> &lt;img></code>
+                                        </td>
+                                        <td>
+                                            <code> &lt;img src="your picture.JPG"></code>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>URL Tag</td>
+                                        <td> " src " attributes specifies the URL of the image and inside the url you can put
+                                            your image link.</td>
+                                        <td>
+                                            <code>sr</code>
+                                        </td>
+                                        <td>
+                                            <code> &lt; img src="- your-url"></code> >
+                                        </td>
+
+                                    </tr>
+
+                                    <td>Alt Attribute</td>
+                                    <td> Alt attrubute provides an alternate text for an image, if the user for some reason cannot
+                                        view it </td>
+                                    <td>
+                                        <code>alt</code>
+                                    </td>
+                                    <td>
+                                        <code> &lt;img src="your picture.JPG" alt="your-description"></code>
+                                    </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Width</td>
+                                        <td>Width is needed to set the area width of an image. It usually comes after alt in
+                                            the img tag.</td>
+                                        <td>
+                                            <code> &lt; Width=" set your pixels here "</code>>
+                                        </td>
+                                        <td>
+                                            <code>&lt;img src="your picture.JPG" alt="your-description" width="500"></code>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Height</td>
+                                        <td>Height is needed to set the height of an image.It usually comes after alt in the
+                                            img tag. </td>
+                                        <td>
+                                            <code>&lt; Height=" set your pixels here "</code>>
+                                        </td>
+                                        <td>
+                                            <code>&lt;img src="your picture.JPG" alt="your-description" width="500" height="600"</code>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <h3> Adding media objects </h3>
+                            Media makes your website more intresting and engages the user. Therefore, we will need to learn how to add media. We are
+                            going to use
+                            <code> &lt;embed></code>tag which is the most widely used method. So basically, to use
+                            <code>&lt;embed></code> and then add the src which contains the url and we can attributes like
+                            <code>&lt;alt</code>,
+                            <code>&lt;height</code> and
+                            <code>&lt;
+                                width</code>> We can also use
+                            <code>&lt;iframe></code> in HTML5 version which is the same as embed tag where we add the src with the URL and its attributes.
+                        </p>
+                        <div class=""></div>
+                        </width>
+                        <div class=""></div>
+                        </width>
+                        <div class="line"></div>
+
+
+
+                        <h2 id="sp_char">Special Characters</h2>
+
+
+                        <p>Some chartacters are reserved in HTML5 i.e you are not allowed to use greater or less than sign because
+                            your text because the browser could mistake them for markup.
+                            <br>
+                            <p>Special Characters make writing and understanding HTML easier: Here is a table with helpful special
+                                characters:
+                            </p>
+                        </p>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+                                    <th scope="col">Symbol</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Entity Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>
+                                        <code>&quot;</code>
+                                    </td>
+                                    <td>Quotation Mark</td>
+                                    <td>
+                                        <code>&quot;&quot;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code>></code>
+                                    </td>
+                                    <td>Less than sign</td>
+                                    <td>
+                                        <code>&lt;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>
+
+                                    </td>
+
+                                    <td>Greater than sign</td>
+                                    <td>
+                                        <code>&gt;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code>&</code>
+                                    </td>
+                                    <td>Ampersand</td>
+
+                                    <td colspan="2">
+                                        <code>&amp;</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+
+
+                        <h3> Standards and Validation </h3>
+                        <br>
+                        <p>
+                            The World Wide Web Consortium sets the Standards for any web validation. It was established in 1994 and it manages many core
+                            web technical specificaiton. Valiadtion is important because of the following reasons:
+                            <li class="debug"> Validation is used as debugging tool
+                            </li>
+                            <p> Valiaditon is mainly used to debug their code which helps web developers to find mistakes that
+                                they can fix. This shows sign of professionalism as well as solid code which is easier to
+                                maintain and hard to breach. </p>
+                            <li class="future proof">
+                                Validaiton is used as future proof quality check </li>
+                            <P> Validation ensures that the work you have done today will work tomorrow because it finds future
+                                problems that could cause your website to crash in future </P>
+
+                            <li class="maintain">
+                                Validation eases maintenance
+                                <p> Valiaditon eases maintenance as it ensures your coding style is globally agreed upon which
+                                    makes it easier for other developers to collaborate as well as maintain the work.
+                                </p>
+
+                            </li>
+
+                            <li class="Good practice">
+                                Validation helps teach good practice
+                                <p> Validiton ensures accesbiity, readibility and overall is a good practice as it helps user
+                                    to debug their code which is a good pratice.
+                                </p>
+
+                                <li class="professional">
+                                    Validation is a sign of professionalism
+                                    <p> As there is no official certificaion for web professionals and only few universities
+                                        teach web technolgoies, many web professional take pride in creating contents using
+                                        proper semantics, well-formed mark up and organised code which shows the sign of
+                                        professionalism.
+                                    </p>
+
+                                </li>
+                        </p>
+                    </p>
+
+                    <div class="line"></div>
+
+
+                    <h2 id="frame">Frameworks</h2>
+                    <br>
+                    <p>A framework is a basic structure underlying a system and in this case it is HTML5. Framework that we
+                        will be using to make our work easier and effecient is Bootstrap. You can check out this awesome
+                        framework in this website:
+
+                        <p>
+                            <a href="https://getbootstrap.com/" style=" color: red">Click here for the BootStrap website</a>
+                        </p>
+
+
+                    </p>
+                    <hr>
+                    <h2 id="Q">Quiz</h2>
+                    <p>This is a Quiz to Test on your HTML knowledge, Click the "+" sign for the answers of these questions!</p>
+                    <button class="collapsible"> What does HTML stand for?</button>
+                    <div class="content">
+                        <p>Hyper Text Markup Language</p>
+
+                    </div>
+                    <button class="collapsible">Which of the following tag is used to mark a begining of paragraph ?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;p&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">From which tag descriptive list starts ?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;dl&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">Correct HTML tag for the largest heading is?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;h1&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">Web pages starts with which ofthe following tag?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;HTML&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">
+                        The attribute, which define the relationship between current document and HREF'ed URL? </button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;rel&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">How can you open a link in a new browser window?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;a href = "url" target= "-blank"&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">Which of the following tag is used to mark a begining of paragraph ?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;p&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">The tag used to create a new list item and also include a hyperlink is?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;li&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">Which of the tag is used to creates a number list?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;li&gt;</code> and
+                            <code>&lt;ol&gt;</code>
+                        </p>
+                    </div>
+                    <button class="collapsible">Symbol used at the beginning of the HREF text is?</button>
+                    <div class="content">
+                        <p>
+                            <code>&lt;#&gt;</code>
+                        </p>
+                    </div>
+                    <hr>
+                    <script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+
+                        for (i = 0; i < coll.length; i++) {
+                            coll[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var content = this.nextElementSibling;
+                                if (content.style.display === "block") {
+                                    content.style.display = "none";
+                                } else {
+                                    content.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
+                    <br>
+                    <a href="html_content.html" class="btn btn-primary btn-sm scrollup" role="button">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </a>
+
+        </div>
+    </div>
+    <div>
+
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
